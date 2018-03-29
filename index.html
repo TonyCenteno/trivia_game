@@ -17,23 +17,23 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col col-12 text-center">
-                <h1>The Question Goes Here?</h1>
+                <h1 id="currQuestion">The Question Goes Here?</h1>
                 <P><small>YOU HAVE <span>30</span> SECONDS TO ANSWER</small></P>
             </div>
         </div>
         <div class="row no-gutters main col col-12">
-            <div onclick="answerValidation()" class="col col-6 text-center">
-                <a href="#"><h2 id="option1" class="text-center">Buster Douglas</h2></a>
+            <div onclick="answerValidation1()" class="col col-6 text-center">
+                <a href="#"><h2 id="option1" class="text-center">OPTION1</h2></a>
             </div>
-            <div onclick="answerValidation()" class="col col-6 text-center">
+            <div onclick="answerValidation2()" class="col col-6 text-center">
                 <a href="#"><h2 id="option2" class="text-center">OPTION2</h2></a>
             </div>
         </div>
         <div class="row no-gutters main col col-12">
-            <div onclick="answerValidation()" class="col col-6 text-center">
+            <div onclick="answerValidation3()" class="col col-6 text-center">
                 <a href="#"><h2 id="option3" class="text-center">OPTION3</h2></a>
             </div>
-            <div onclick="answerValidation()" class="col col-6 text-center">
+            <div onclick="answerValidation4()" class="col col-6 text-center">
                 <a href="#"><h2 id="option4" class="text-center">OPTION4</h2></a>
             </div>
         </div>
@@ -63,6 +63,22 @@
             <P class="text-center col-12"><small>KEEP UP THE GOOD WORK</small></P>
         </div>
     </div>
+
+    <!-- <div id="outOfTime" class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <h1 class="text-center col-12">You Are Out Of Time</h1><br>
+            <P class="text-center col-12"><small>TRY AGAIN</small></P>
+        </div>
+    </div>
+
+    <div id="finalScore" class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <h1 class="text-center col-12">THANK YOU FOR PLAYING!</h1><br>
+            <P class="text-center col-12"><small>HERE ARE YOUR RESULTS:</small></P>
+            <h2 class="text-center col-12">CORRECT:</h2>
+            <h2 class="text-center col-12">WRONG:</h2>
+        </div>
+    </div> -->
 
     <script src="assets/javascript/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
