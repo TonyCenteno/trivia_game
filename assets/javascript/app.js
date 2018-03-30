@@ -88,7 +88,8 @@ var correctCount = 0;
 var unaswered = 0;
 var i = 1;
 console.log(i);
-console.log(Q1.correctAn);
+console.log(wrongCount);
+console.log(correctCount);
 // create a function to display intro, correct, and wrong divs.
 function loadQuestion(){
     if (i === 1){
@@ -114,6 +115,7 @@ function loadQuestion(){
         document.getElementById("option3").innerHTML = Q3.choices[2];
         document.getElementById("option4").innerHTML = Q3.choices[3];
         console.log(Q3.correctAn);
+        console.log(Q3.choices[1])
     }
     else if (i === 4){
         document.getElementById("currQuestion").innerHTML = Q4.question;
@@ -218,63 +220,123 @@ function loadQuestion(){
         document.getElementById("option3").innerHTML = Q16.choices[2];
         document.getElementById("option4").innerHTML = Q16.choices[3];
         console.log(Q16.correctAn);
+
     }
 }
 function answerValidation1(){
-    if (document.getElementById("option1").innerHTML === Q1.correctAn || document.getElementById("option1").innerHTML === Q2.correctAn || document.getElementById("option1").innerHTML === Q3.correctAn || document.getElementById("option1").innerHTML === Q4.correctAn || document.getElementById("option1").innerHTML === Q5.correctAn || document.getElementById("option1").innerHTML === Q6.correctAn || document.getElementById("option1").innerHTML === Q7.correctAn || document.getElementById("option1").innerHTML === Q8.correctAn || document.getElementById("option1").innerHTML === Q9.correctAn || document.getElementById("option1").innerHTML === Q10.correctAn || document.getElementById("option1").innerHTML === Q11.correctAn || document.getElementById("option1").innerHTML === Q12.correctAn || document.getElementById("option1").innerHTML === Q13.correctAn || document.getElementById("option1").innerHTML === Q14.correctAn || document.getElementById("option1").innerHTML === Q15.correctAn || document.getElementById("option1").innerHTML === Q16.correctAn){
+    if (document.getElementById("option1").innerHTML == Q1.correctAn || document.getElementById("option1").innerHTML == Q2.correctAn || document.getElementById("option1").innerHTML == Q3.correctAn || document.getElementById("option1").innerHTML == Q4.correctAn || document.getElementById("option1").innerHTML == Q5.correctAn || document.getElementById("option1").innerHTML == Q6.correctAn || document.getElementById("option1").innerHTML == Q7.correctAn || document.getElementById("option1").innerHTML == Q8.correctAn || document.getElementById("option1").innerHTML == Q9.correctAn || document.getElementById("option1").innerHTML == Q10.correctAn || document.getElementById("option1").innerHTML == Q11.correctAn || document.getElementById("option1").innerHTML == Q12.correctAn || document.getElementById("option1").innerHTML == Q13.correctAn || document.getElementById("option1").innerHTML == Q14.correctAn || document.getElementById("option1").innerHTML == Q15.correctAn || document.getElementById("option1").innerHTML == Q16.correctAn){
         correct();
         i++;
         correctCount++;
+        if (i == 17){
+            finalScore();
+        }
         loadQuestion();
+
+console.log(wrongCount);
+console.log(correctCount);
     }
     else {
         wrong();
         i++;
         wrongCount++;
+        if (i == 17){
+            finalScore();
+        }
         loadQuestion();
+
+console.log(wrongCount);
+console.log(correctCount);
     }
 }
 function answerValidation2(){
-    if (document.getElementById("option2").innerHTML === Q1.correctAn || document.getElementById("option2").innerHTML === Q2.correctAn || document.getElementById("option2").innerHTML === Q3.correctAn || document.getElementById("option2").innerHTML === Q4.correctAn || document.getElementById("option2").innerHTML === Q5.correctAn || document.getElementById("option2").innerHTML === Q6.correctAn || document.getElementById("option2").innerHTML === Q7.correctAn || document.getElementById("option2").innerHTML === Q8.correctAn || document.getElementById("option2").innerHTML === Q9.correctAn || document.getElementById("option2").innerHTML === Q10.correctAn || document.getElementById("option2").innerHTML === Q11.correctAn || document.getElementById("option2").innerHTML === Q12.correctAn || document.getElementById("option2").innerHTML === Q13.correctAn || document.getElementById("option2").innerHTML === Q14.correctAn || document.getElementById("option2").innerHTML === Q15.correctAn || document.getElementById("option2").innerHTML === Q16.correctAn){
+    if (document.getElementById("option2").innerHTML == Q1.correctAn || document.getElementById("option2").innerHTML == Q2.correctAn || document.getElementById("option2").innerHTML == Q3.correctAn || document.getElementById("option2").innerHTML == Q4.correctAn || document.getElementById("option2").innerHTML == Q5.correctAn || document.getElementById("option2").innerHTML == Q6.correctAn || document.getElementById("option2").innerHTML == Q7.correctAn || document.getElementById("option2").innerHTML == Q8.correctAn || document.getElementById("option2").innerHTML == Q9.correctAn || document.getElementById("option2").innerHTML == Q10.correctAn || document.getElementById("option2").innerHTML == Q11.correctAn || document.getElementById("option2").innerHTML == Q12.correctAn || document.getElementById("option2").innerHTML == Q13.correctAn || document.getElementById("option2").innerHTML == Q14.correctAn || document.getElementById("option2").innerHTML == Q15.correctAn || document.getElementById("option2").innerHTML == Q16.correctAn){
         correct();
         i++;
         correctCount++;
+        if (i == 17){
+            finalScore();
+        }
         loadQuestion();
+
+console.log(wrongCount);
+console.log(correctCount);
     }
     else {
         wrong();
         i++;
         wrongCount++;
+        if (i == 17){
+            finalScore();
+        }
         loadQuestion();
+
+console.log(wrongCount);
+console.log(correctCount);
     }
 }
 function answerValidation3(){
-    if (document.getElementById("option3").innerHTML === Q1.correctAn || document.getElementById("option3").innerHTML === Q2.correctAn || document.getElementById("option3").innerHTML === Q3.correctAn || document.getElementById("option3").innerHTML === Q4.correctAn || document.getElementById("option3").innerHTML === Q5.correctAn || document.getElementById("option3").innerHTML === Q6.correctAn || document.getElementById("option3").innerHTML === Q7.correctAn || document.getElementById("option3").innerHTML === Q8.correctAn || document.getElementById("option3").innerHTML === Q9.correctAn || document.getElementById("option3").innerHTML === Q10.correctAn || document.getElementById("option3").innerHTML === Q11.correctAn || document.getElementById("option3").innerHTML === Q12.correctAn || document.getElementById("option3").innerHTML === Q13.correctAn || document.getElementById("option3").innerHTML === Q14.correctAn || document.getElementById("option3").innerHTML === Q15.correctAn || document.getElementById("option3").innerHTML === Q16.correctAn){
+    if (document.getElementById("option3").innerHTML == Q1.correctAn || document.getElementById("option3").innerHTML == Q2.correctAn || document.getElementById("option3").innerHTML == Q3.correctAn || document.getElementById("option3").innerHTML == Q4.correctAn || document.getElementById("option3").innerHTML == Q5.correctAn || document.getElementById("option3").innerHTML == Q6.correctAn || document.getElementById("option3").innerHTML == Q7.correctAn || document.getElementById("option3").innerHTML == Q8.correctAn || document.getElementById("option3").innerHTML == Q9.correctAn || document.getElementById("option3").innerHTML == Q10.correctAn || document.getElementById("option3").innerHTML == Q11.correctAn || document.getElementById("option3").innerHTML == Q12.correctAn || document.getElementById("option3").innerHTML == Q13.correctAn || document.getElementById("option3").innerHTML == Q14.correctAn || document.getElementById("option3").innerHTML == Q15.correctAn || document.getElementById("option3").innerHTML == Q16.correctAn){
         correct();
         i++;
         correctCount++;
+        if (i == 17){
+            finalScore();
+        }
         loadQuestion();
+
+console.log(wrongCount);
+console.log(correctCount);
     }
     else {
         wrong();
         i++;
         wrongCount++;
+        if (i == 17){
+            finalScore();
+        }
         loadQuestion();
+
+console.log(wrongCount);
+console.log(correctCount);
     }
 }
 function answerValidation4(){
-    if (document.getElementById("option4").innerHTML === Q1.correctAn || document.getElementById("option4").innerHTML === Q2.correctAn || document.getElementById("option4").innerHTML === Q3.correctAn || document.getElementById("option4").innerHTML === Q4.correctAn || document.getElementById("option4").innerHTML === Q5.correctAn || document.getElementById("option4").innerHTML === Q6.correctAn || document.getElementById("option4").innerHTML === Q7.correctAn || document.getElementById("option4").innerHTML === Q8.correctAn || document.getElementById("option4").innerHTML === Q9.correctAn || document.getElementById("option4").innerHTML === Q10.correctAn || document.getElementById("option4").innerHTML === Q11.correctAn || document.getElementById("option4").innerHTML === Q12.correctAn || document.getElementById("option4").innerHTML === Q13.correctAn || document.getElementById("option4").innerHTML === Q14.correctAn || document.getElementById("option4").innerHTML === Q15.correctAn || document.getElementById("option4").innerHTML === Q16.correctAn){
+    if (document.getElementById("option4").innerHTML == Q1.correctAn || document.getElementById("option4").innerHTML == Q2.correctAn || document.getElementById("option4").innerHTML == Q3.correctAn || document.getElementById("option4").innerHTML == Q4.correctAn || document.getElementById("option4").innerHTML == Q5.correctAn || document.getElementById("option4").innerHTML == Q6.correctAn || document.getElementById("option4").innerHTML == Q7.correctAn || document.getElementById("option4").innerHTML == Q8.correctAn || document.getElementById("option4").innerHTML == Q9.correctAn || document.getElementById("option4").innerHTML == Q10.correctAn || document.getElementById("option4").innerHTML == Q11.correctAn || document.getElementById("option4").innerHTML == Q12.correctAn || document.getElementById("option4").innerHTML == Q13.correctAn || document.getElementById("option4").innerHTML == Q14.correctAn || document.getElementById("option4").innerHTML == Q15.correctAn || document.getElementById("option4").innerHTML == Q16.correctAn){
         correct();
         i++;
         correctCount++;
+        if (i == 17){
+            finalScore();
+        }               
         loadQuestion();
+
+console.log(wrongCount);
+console.log(correctCount);
     }
     else {
         wrong();
         i++;
         wrongCount++;
+        if (i == 17){
+            finalScore();
+        }
         loadQuestion();
+
+console.log(wrongCount);
+console.log(correctCount);
     }
+}
+function finalScore(){
+    document.getElementById("finalScore").style.display = "inline-block";
+    //$(".correctAmount").innerHTML = "khkhjj";
+    document.getElementById("correctAmount").innerHTML = correctCount;
+    document.getElementById("wrongAmount").innerHTML = wrongCount;
+}
+function closeFinalScore(){
+    reset();
+    loadQuestion();
+    document.getElementById("finalScore").style.display = "none";
 }
 function play(){
 
@@ -293,7 +355,7 @@ function correct(){
         document.getElementById("correct").style.display = "none";
     }
     getCorrect();
-    setTimeout(closeCorrect, 2000);
+    setTimeout(closeCorrect, 500);
 }
 function wrong(){
     function getWrong(){
@@ -303,11 +365,16 @@ function wrong(){
         document.getElementById("wrong").style.display = "none";
     }
     getWrong();
-    setTimeout(closeWrong, 2000);
+    setTimeout(closeWrong, 500);
 }
 function reset(){
+    wrongCount = 0;
+    correctCount = 0;
+    unaswered = 0;
+    i = 1;
+
 
 }
 // create timer function
-// intro();
+intro();
 loadQuestion();

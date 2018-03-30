@@ -71,7 +71,7 @@ nav {
 span #myLives {
     color:red;
 }
-#wrong, #correct, #intro {
+#wrong, #correct, #intro, #finalScore, #outOfTime {
     overflow: auto;
     margin: auto;
     padding-top: 88px;
