@@ -83,6 +83,9 @@ span #myLives {
     z-index: 1;
     display:none;
 }
+#finalScore {
+    z-index: 2;
+}
 #intro {
     background-color:#00987c;
     padding-top: 55px;
