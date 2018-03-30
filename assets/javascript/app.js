@@ -107,6 +107,7 @@ console.log(wrongCount);
 console.log(correctCount);
 // create a function to display intro, correct, and wrong divs.
 function loadQuestion(){
+    timeLeft = 31;
     countdown();
         if (i === 1){
         
@@ -371,6 +372,7 @@ function closeFinalScore(){
     document.getElementById("finalScore").style.display = "none";
 }
 function intro(){
+    timeLeft = 9000000000;
     document.getElementById("intro").style.display = "inline-block";
 }
 function closeIntro(){
